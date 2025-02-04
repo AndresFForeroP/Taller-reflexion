@@ -3,6 +3,7 @@ Autor: Andres Forero
 Fecha: 03/02/2025
 Descripcion: mostrar como se remueven datos de las listas con pop()
 '''
+import modules.Fgenerales as fg
 numeros = [1,2,3,4,5]
 menu = 1
 while menu != 3:
@@ -18,8 +19,9 @@ while menu != 3:
     match menu:
         case 1:
             print(f'Se eliminio {numeros.pop()} de la lista')
-            print(numeros)
+            fg.imp_lista(numeros)
         case 2:
             indice = int(input('Ingresa el indice que desea eliminar de la lista '))
-            print(numeros.pop(indice))
-            print(numeros)
+            print(f'El numero eliminado fue {numeros.pop(indice)}')
+            fg.imp_lista(numeros)
+print('Saliste del programa')

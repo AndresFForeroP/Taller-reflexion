@@ -1,10 +1,10 @@
 '''
 Autor: Andres Forero
 Fecha: 03/02/2025
-Descripcion: mostrar como se remueven datos de las listas con remove()
+Descripcion: mostrar el indice de una variable de la lista usando index()
 '''
 colores = ['rojo','azul','verde','amarrilo','negro']
-color = input('Ingresa el color del cual quieres saber su poscicion ')
+color = input('Ingresa el color del cual quieres saber su poscicion ').lower()
 while color.isalpha == False:
     color = input('Ingresa el color del cual quieres saber su poscicion ').lower()
 try:

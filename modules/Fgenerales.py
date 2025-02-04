@@ -1,6 +1,5 @@
 import os
 import sys
-
 def limpiar_p():
     if sys.platform == 'linux' or sys.platform == 'darwin':
         os.system('clear')
@@ -31,7 +30,6 @@ def validartipo(tipo,msg):
                 return validartipo(tipo,msg)
             else:
                 return x
-
 def sabertipo(variable):
     try:
         if variable.type():
@@ -40,3 +38,6 @@ def sabertipo(variable):
             return 'alfanumerico'
     except Exception:
         return 'entero'
+def imp_listas(lista):
+    for i in lista:
+        print(i,end=(' '))
