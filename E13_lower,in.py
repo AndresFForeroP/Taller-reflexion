@@ -17,3 +17,4 @@ def agregar_contactos():
     print(contactos)    
 contactos = []
 agregar_contactos()
+print('hola')
