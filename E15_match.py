@@ -4,6 +4,7 @@ Fecha: 19/02/2025
 Descripcion: uso de match
 '''
 import modules.Fgenerales as fg
+opcion = 0
 while opcion != 1 and opcion != 2:
     opcion = fg.validartipo(1,'Ingrese 1 o 2')
 match opcion:
